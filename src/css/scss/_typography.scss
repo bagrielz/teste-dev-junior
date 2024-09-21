@@ -1,0 +1,12 @@
+// Mixin para textos
+@mixin type-text(
+  $size: 1rem,
+  $line-height: 19.36px,
+  $weight: 400,
+  $letter: -2%
+) {
+  font-size: $size;
+  line-height: $line-height;
+  font-weight: $weight;
+  letter-spacing: $letter;
+}

@@ -1,0 +1,18 @@
+// Variáveis
+$l-device: 430px;
+
+// Box-sizing
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+// Mixin de media-queries
+@mixin device($size) {
+  @if $size == s {
+    @media screen and (max-width: $l-device) {
+      @content;
+    }
+  }
+}

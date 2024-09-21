@@ -1,0 +1,31 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 24px 56px 0 56px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #d7dde9;
+  h1 {
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 29.04px;
+    letter-spacing: -2%;
+  }
+  span {
+    @include type-text();
+    color: rgba(0, 0, 0, 0.54);
+  }
+}
+
+@include device(s) {
+  .header {
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+    margin: 24px;
+  }
+  h1 {
+    font-size: 16px;
+    line-height: 19.36px;
+  }
+}
